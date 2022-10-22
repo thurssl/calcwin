@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/laranja"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_expressao"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/roxo"
+        android:ellipsize="start"
+        android:gravity="end"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="40sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_resultado"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/roxo"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:maxLines="1"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal"
+        android:textColor="@color/laranja">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bt_limpar"
+            style="@style/Operators_Button"
+            android:layout_weight="2"
+            android:text="C"
+            android:textColor="@color/ciano" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/mod"
+            style="@style/Operators_Button"
+            android:text="%"
+            android:textColor="@color/roxo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal"
+        android:textColor="@color/laranja">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/numero_sete"
+            style="@style/Numbers_Button"
+            android:text="7"
+            android:textColor="@color/verde" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/numero_oito"
+            style="@style/Numbers_Button"
+            android:text="8"
+            android:textColor="@color/roxo" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/numero_nove"
+            style="@style/Numbers_Button"
+            android:text="9"
+            android:textColor="@color/laranja" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/multiplicacao"
+            style="@style/Operators_Button"
+            android:text="X"
+            android:textColor="@color/ciano" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal"
+        android:textColor="@color/laranja">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/numero_quatro"
+            style="@style/Numbers_Button"
+            android:text="4"
+            android:textColor="@color/laranja" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/numero_cinco"
+            style="@style/Numbers_Button"
+            android:text="5"
+            android:textColor="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/numero_seis"
+            style="@style/Numbers_Button"
+            android:text="6"
+
+            android:textColor="@color/amarelo" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/subtracao"
+            style="@style/Operators_Button"
+            android:text="-"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/numero_um"
+            style="@style/Numbers_Button"
+            android:text="1"
+            android:textColor="@color/ciano" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/numero_dois"
+            style="@style/Numbers_Button"
+            android:text="2"
+            android:textColor="@color/amarelo" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/numero_tres"
+            style="@style/Numbers_Button"
+            android:text="3"
+            android:textColor="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/adicao"
+            style="@style/Operators_Button"
+            android:text="+"
+            android:textColor="@color/laranja" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ponto"
+            style="@style/Numbers_Button"
+            android:text="."
+            android:textColor="@color/laranja" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/numero_zero"
+            style="@style/Numbers_Button"
+            android:text="0"
+            android:textColor="@color/ciano" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/backspace"
+            style="@style/Numbers_Button"
+            android:scaleType="center"
+            android:src="@drawable/backspace" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/igual"
+            style="@style/Operators_Button"
+            android:text="="
+            android:textColor="@color/verde" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/raiz"
+            style="@style/Operators_Button"
+            android:text="√"
+            android:textColor="@color/amarelo" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/divisao"
+            style="@style/Operators_Button"
+            android:text="/"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splashActivity"
+
+    android:orientation="vertical"
+    android:background="@color/verde">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="JAIMIM"
+        android:textStyle="italic"
+        android:textColor="@color/laranja"
+        android:textSize="50sp"
+        android:gravity="bottom|center"
+
+        android:layout_weight="1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:text="calculos"
+        android:textSize="40sp"
+        android:gravity="top|center"
+        android:layout_weight="1"/>
+
+</LinearLayout>
